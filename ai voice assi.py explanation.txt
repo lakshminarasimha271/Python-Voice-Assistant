@@ -1,0 +1,17 @@
+Step 1: Setup
+Make sure you have Python installed on your system. We'll use the following libraries:
+
+SpeechRecognition: For recognizing speech from audio input.
+pyttsx3: For text-to-speech conversion.
+pyaudio: For audio input/output operations.
+wikipedia: For querying and retrieving information from Wikipedia.
+requests: For making HTTP requests (optional, for web APIs).
+datetime: For handling date and time operations.
+
+Explanation:
+speak(text): Uses pyttsx3 to convert text into speech and speak it out loud.
+recognize_speech(): Uses speech_recognition to listen for audio input from the microphone, recognize speech using Google's speech recognition service, and return the recognized query as text.
+perform_action(query): Performs various actions based on the user's query. Currently supports:
+Searching Wikipedia for information.
+Providing the current time and date.
+Responding to gratitude and exiting the program.
